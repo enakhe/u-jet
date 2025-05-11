@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
 						<a href="#faq" className="text-sm text-white hover:text-gold transition-colors">FAQ</a>
 					</nav>
 
-					<div className='mx-4 lg:mx-0'>
+					<div className='mx-3 lg:mx-0'>
 						<motion.a
 							href="#waitlist"
 							className="btn-primary text-sm"
