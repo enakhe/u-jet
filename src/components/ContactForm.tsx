@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Twitter, Instagram, Linkedin } from 'lucide-react';
+import img from '../assets/img/image.jpg';
 
 const ContactForm: React.FC = () => {
 	const [formData, setFormData] = useState({
@@ -120,7 +121,7 @@ const ContactForm: React.FC = () => {
 						>
 							<div className="rounded-xl overflow-hidden shadow-md">
 								<img
-									src="https://media.istockphoto.com/id/498556541/photo/flight-attendant.jpg?s=612x612&w=0&k=20&c=_Kru2YBgVsv3zsF4bFChWItBDuAjgywMUdlqFV-BsIQ="
+									src={img}
 									alt="Private Jet Atendant"
 									className="w-full h-64 object-cover"
 								/>
