@@ -57,7 +57,7 @@ const About: React.FC = () => {
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="text-gold text-xl font-bold mb-2">$100</div>
+              <div className="text-gold text-xl font-bold mb-2">$100/month</div>
               <div className="text-sm text-charcoal/80">Membership Fees</div>
             </motion.div>
           </div>
