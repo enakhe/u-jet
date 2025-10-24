@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -13,7 +15,7 @@ const CTA: React.FC = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Ready for Luxury at <span className="text-gold">Incredible Rates</span>?
+              Ready for Luxury at <span className="text-primary">Incredible Rates</span>?
             </h2>
             
             <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">

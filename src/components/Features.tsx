@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -30,7 +32,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="text-gold mr-4">
+            <div className="text-primary mr-4">
               {icon}
             </div>
             <h3 className="font-semibold text-lg">{title}</h3>
@@ -86,7 +88,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="section-padding bg-gradient-to-b from-gold/10 via-white to-white">
+    <section id="features" className="section-padding bg-gradient-to-b from-primary/10 via-white to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -128,7 +130,7 @@ const Features: React.FC = () => {
         </div>
         
         <motion.div 
-          className="max-w-3xl mx-auto mt-16 p-8 bg-gradient-to-r from-gold/20 to-gold/5 rounded-xl"
+          className="max-w-3xl mx-auto mt-16 p-8 bg-gradient-to-r from-primary/20 to-primary/5 rounded-xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #D71435;
+  --secondary: #1A2A39;
+  --charcoal: #333333;
+  --light-bg: #cfcfcf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--charcoal);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #D71435 0%, #5a1420 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.primary-gradient {
+  background: linear-gradient(90deg, #D71435 0%, #1A2A39 100%);
+}
+
+.primary-to-charcoal-gradient {
+  background: linear-gradient(135deg, #D71435 0%, #686868 100%);
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.6));
+  backdrop-filter: blur(1px);
+}
+
+.section-padding {
+  @apply py-16 md:py-20 lg:py-24;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#D71435] hover:bg-[#5a1420] text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 shadow-md;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#D71435] text-[#D71435] hover:bg-[#D71435] hover:text-white font-medium py-3 px-6 rounded-md transition-all duration-300;
+  }
+}

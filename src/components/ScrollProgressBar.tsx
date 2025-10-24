@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 
@@ -21,7 +23,7 @@ const ScrollProgressBar: React.FC = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-gold/30 z-50 origin-left"
+      className="fixed top-0 left-0 right-0 h-1 bg-primary/30 z-50 origin-left"
       style={{ scaleX: scrollYProgress }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

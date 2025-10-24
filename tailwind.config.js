@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       colors: {
-        gold: '#d4af37',
+        primary: '#D71435',
+        secondary: '#1A2A39',
         charcoal: '#333333',
         lightBg: '#cfcfcf',
-        darkGold: '#9e7c1e',
-        lightGold: '#e9cea6',
+        primaryDark: '#5a1420',
+        primaryLight: '#f4a5b0',
         success: '#10b981',
         warning: '#f59e0b',
         error: '#ef4444',
@@ -25,4 +30,4 @@ export default {
     },
   },
   plugins: [],
-};
+}
