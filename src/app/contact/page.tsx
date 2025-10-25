@@ -1,9 +1,11 @@
+"use client";
+
 import Header from "@/components/layouts/Header";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, MessageCircle, Users } from "lucide-react";
 
-const Contact: React.FC = () => {
+export default function Contact() {
     const contactInfo = [
         {
             icon: Mail,
@@ -58,7 +60,7 @@ const Contact: React.FC = () => {
     return (
         <div className="min-h-screen bg-lightBg">
             <ScrollProgressBar />
-            <Header />
+            {/* <Header /> */}
 
             <main className="pt-20">
                 {/* Hero Section */}
@@ -140,8 +142,8 @@ const Contact: React.FC = () => {
                                 </h2>
                                 <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
                                     Have a question or want to learn more about
-                                    UJET? Fill out the form below and we'll get
-                                    back to you within 24 hours.
+                                    UJET? Fill out the form below and we&apos;ll
+                                    get back to you within 24 hours.
                                 </p>
                             </motion.div>
 
@@ -414,6 +416,4 @@ const Contact: React.FC = () => {
             </main>
         </div>
     );
-};
-
-export default Contact;
+}

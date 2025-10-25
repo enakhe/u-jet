@@ -1,9 +1,11 @@
+"use client";
+
 import Header from "@/components/layouts/Header";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import { motion } from "framer-motion";
 import { Check, Crown, Zap, Shield } from "lucide-react";
 
-const Memberships: React.FC = () => {
+export default function Memberships() {
     const membershipTiers = [
         {
             name: "Basic",
@@ -55,7 +57,7 @@ const Memberships: React.FC = () => {
     return (
         <div className="min-h-screen bg-lightBg">
             <ScrollProgressBar />
-            <Header />
+            {/* <Header /> */}
 
             <main className="pt-20">
                 {/* Hero Section */}
@@ -266,6 +268,4 @@ const Memberships: React.FC = () => {
             </main>
         </div>
     );
-};
-
-export default Memberships;
+}

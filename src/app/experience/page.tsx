@@ -1,9 +1,15 @@
+"use client";
+
 import Header from "@/components/layouts/Header";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import { motion } from "framer-motion";
-import { Star, Clock, MapPin, Users, Heart, Globe } from "lucide-react";
+import { Star, Clock, MapPin, Heart, Globe } from "lucide-react";
 
-const Experience: React.FC = () => {
+export default function Experience() {
+    return <div>Experience Page</div>;
+}
+
+const ExperienceOld: React.FC = () => {
     const experiences = [
         {
             title: "Luxury City Breaks",
@@ -97,8 +103,8 @@ const Experience: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-lightBg">
-            <ScrollProgressBar />
-            <Header />
+            {/* <ScrollProgressBar />
+            <Header /> */}
 
             <main className="pt-20">
                 {/* Hero Section */}
@@ -267,7 +273,7 @@ const Experience: React.FC = () => {
 
                                         <div className="mb-6">
                                             <h4 className="font-semibold text-charcoal mb-3">
-                                                What's Included:
+                                                What&apos;s Included:
                                             </h4>
                                             <ul className="space-y-1">
                                                 {experience.features.map(
@@ -399,5 +405,3 @@ const Experience: React.FC = () => {
         </div>
     );
 };
-
-export default Experience;

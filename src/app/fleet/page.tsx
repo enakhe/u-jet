@@ -1,9 +1,11 @@
-import Header from "@/components/layouts/Header";
-import ScrollProgressBar from "@/components/ScrollProgressBar";
+"use client";
+
+// import Header from "@/components/layouts/Header";
+// import ScrollProgressBar from "@/components/ScrollProgressBar";
 import { motion } from "framer-motion";
 import { Plane, Users, Clock, Shield } from "lucide-react";
 
-const Fleet: React.FC = () => {
+export default function Fleet() {
     const aircraftTypes = [
         {
             name: "Light Jets",
@@ -100,8 +102,6 @@ const Fleet: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-lightBg">
-            
-
             <main className="pt-20">
                 {/* Hero Section */}
                 <section className="section-padding bg-gradient-to-b from-primary/10 via-white to-white">
@@ -120,7 +120,7 @@ const Fleet: React.FC = () => {
                             </h1>
                             <p className="text-xl text-charcoal/80 mb-12 max-w-3xl mx-auto">
                                 Access a carefully curated network of luxury
-                                private jets from the world's most trusted
+                                private jets from the world&apos;s most trusted
                                 operators. Every aircraft meets our stringent
                                 standards for safety, comfort, and reliability.
                             </p>
@@ -295,9 +295,9 @@ const Fleet: React.FC = () => {
                                 Trusted Partner Operators
                             </h2>
                             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                                We partner with the industry's most reputable
-                                private jet operators to ensure the highest
-                                standards of safety and service.
+                                We partner with the industry&apos;s most
+                                reputable private jet operators to ensure the
+                                highest standards of safety and service.
                             </p>
                         </motion.div>
 
@@ -363,6 +363,4 @@ const Fleet: React.FC = () => {
             </main>
         </div>
     );
-};
-
-export default Fleet;
+}

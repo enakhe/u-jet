@@ -238,7 +238,7 @@ export default function Home() {
 
                                 {/* Description */}
                                 <p className="text-lg text-charcoal/100 p-4">
-                                    Booking a private flight shouldn't be
+                                    Booking a private flight shouldn&apos;t be
                                     complicated. With our streamlined process,
                                     you can find exclusive empty leg flights,
                                     secure your booking in minutes, and take off
@@ -332,9 +332,9 @@ export default function Home() {
 
                                     {/* Description */}
                                     <p className="text-lg text-white/100 text-center leading-relaxed">
-                                        Once you've found the perfect flight,
-                                        booking takes just minutes. With secure
-                                        payment options and instant
+                                        Once you&apos;ve found the perfect
+                                        flight, booking takes just minutes. With
+                                        secure payment options and instant
                                         confirmation, you can lock in your
                                         journey with confidence, no
                                         back-and-forth.
@@ -398,7 +398,7 @@ export default function Home() {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    Let's get you in a Jet!
+                                    Let&apos;s get you in a Jet!
                                 </motion.button>
                             </motion.div>
                         </div>
@@ -553,7 +553,7 @@ export default function Home() {
                                                     Mid Size Jets
                                                 </h4>
                                                 <p className="text-white text-md font-medium tracking-wider uppercase">
-                                                    Embraer Legacy 450. 
+                                                    Embraer Legacy 450.
                                                 </p>
                                             </div>
                                         </div>
